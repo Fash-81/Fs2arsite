@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Negar";
+    src: url(A\ Negaar\ Regular\ .ttf);
+}
+@font-face {
+    font-family: "Asal";
+    src: url(Asal\ Normal\ .TTF);
+}
