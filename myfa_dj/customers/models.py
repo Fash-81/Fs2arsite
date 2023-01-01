@@ -8,7 +8,8 @@ class Portfolio(models.Model):
         ('پوستر' , 'پوستر'),
         ('بنر' , 'بنر'),
         ('بیزینس کارت' , 'بیزینس کارت'),
-        ('لوگو','لوگو')
+        ('لوگو','لوگو'),
+        ('وکتور','وکتور')
     ]
     creator= models.ForeignKey(User,related_name='Portfolios', on_delete=models.SET_NULL,null=True,blank=True )
     case = models.CharField(max_length=50, choices=FORMAT_CHOICES)
