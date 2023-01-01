@@ -24,7 +24,7 @@
                     <input type="text" id="format"
                         class="shadow-sm  border  text-2xl  rounded-lg text-right block w-full p-2.5 bg-gray-700/40 border-gray-600 placeholder-gray-400 text-white  shadow-sm-light"
                         placeholder="" required v-model="form.case">
-                    <p class="font-Negar  text-white">برای قالب یکی از موارد (لوگو -وکتور- بیزینس کارت - بنر
+                    <p class="font-Negar  text-white">برای قالب یکی از موارد (لوگو -وکتور - بیزینس کارت - بنر
                         - پوستر) را تایپ نمایید</p>
                 </div>
                 <div class="mb-6">
