@@ -15,8 +15,8 @@ class Portfolio(models.Model):
     case = models.CharField(max_length=50, choices=FORMAT_CHOICES)
     topic = models.CharField(max_length=50)
     subject=models.CharField(max_length=50)
-    content = models.TextField()
-    description=models.TextField()
+    content = models.TextField(null=True,blank=True)
+    description=models.TextField(null=True,blank=True)
     created_at= models.DateField(auto_now_add=True)
     p_image= models.ImageField(upload_to='p/',null=True,blank=True)
 
@@ -31,8 +31,8 @@ class Order(models.Model):
     case = models.CharField(max_length=50, choices=FORMAT_CHOICES)
     topic = models.CharField(max_length=50)
     subject=models.CharField(max_length=50)
-    content = models.TextField()
-    description=models.TextField()
+    content = models.TextField(null=True,blank=True)
+    description=models.TextField(null=True,blank=True)
     created_at= models.DateField(auto_now_add=True)
     o_image= models.ImageField(upload_to='o/',null=True,blank=True)
 

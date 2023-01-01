@@ -11,9 +11,7 @@
                     <th scope="col" class=" hidden lg:table-cell py-3 px-5">
                         توضیحات
                     </th>
-                    <th scope="col" class="hidden lg:table-cell py-3 px-5">
-                        متن
-                    </th>
+ 
                     <th scope="col" class="  py-3 px-6">
                         عنوان
                     </th>
@@ -29,9 +27,7 @@
                     <td class=" hidden lg:table-cell py-4 px-5">
                         {{ Portfilio.description }}
                     </td>
-                    <td class="hidden lg:table-cell py-4 px-5">
-                        {{ Portfilio.content }}
-                    </td>
+
                     <td class=" py-4 px-6">
                         {{ Portfilio.subject }}
                     </td>
@@ -57,7 +53,7 @@ export default {
     },
     computed: {
         getVectors() {
-            return this.nemuoneKareman.filter(p => p.case === 'وکتور')
+            return this.nemuoneKareman.filter(v => v.case === 'وکتور')
         }
     },
     mounted() {

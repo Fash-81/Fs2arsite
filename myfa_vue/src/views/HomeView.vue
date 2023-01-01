@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <NavBar />
+    
     <PortfolioCards class="m-20 justify-center"/>
   </div>
 </template>
