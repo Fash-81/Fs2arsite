@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavBar />
-        <SuccessToast v-if="toast" action=" ثبت سفارش" class=" m-40" />
+        <SuccessToast v-if="toast" action=" ثبت سفارش" class=" m-80" />
         <div>
             <form @submit.prevent="submit"
                 class="text-right  mt-10 mb-10 ml-60 mr-60 p-5  rounded-lg shadow border  bg-gray-900/60 border-gray-700">
@@ -52,10 +52,9 @@
                 <!-- <div>
                         <label class="block mb-2 text-2xl  font-Negar  text-white"
                             for="file_input">بارگزاری تصویر</label>
-                        <input v-on:change="form.o_image"
-                            class="block w-full text-2xl   border rounded-lg cursor-pointer  text-gray-400 focus:outline-none bg-gray-700/40 border-gray-600 placeholder-gray-400"
-                            aria-describedby="file_input_help" id="file_input" type="file">
-                        <p class="mt-1 text-2xl  text-gray-500 text-gray-300" id="file_input_help">SVG, PNG, JPG
+                        <input type="file" @change="onFileChange" v-on:change="form.o_image"
+                            class="block w-full text-2xl   border rounded-lg cursor-pointer  text-gray-400 focus:outline-none bg-gray-700/40 border-gray-600 placeholder-gray-400">
+                        <p class="mt-1 text-2xl   text-gray-300" id="file_input_help">SVG, PNG, JPG
                         </p>
                 </div> -->
                 <br>
@@ -98,7 +97,7 @@ export default {
                 .catch((e) => {
                     console.log(e)
                     setTimeout(() => {
-                        alert('برای ثبت سفارش ابتدا وارد شوید سپس  دوباره تلاش کنید')
+                        alert('برای ثبت سفارش ابتدا وارد شوید//دوباره تلاش کنید')
                     }, 100);
                 })
         }

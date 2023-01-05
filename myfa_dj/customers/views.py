@@ -19,5 +19,3 @@ class OrderViewSets(viewsets.ModelViewSet):
 class PortfolioViewSets(viewsets.ModelViewSet):
     serializer_class = PortfolioSerializer
     queryset = Portfolio.objects.all()
-
-
